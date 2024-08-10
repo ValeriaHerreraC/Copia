@@ -1,0 +1,693 @@
+<html>
+	<head>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+			p{
+				font-family:system-ui;
+			}
+
+			h3{
+				font-family: system-ui;
+			}
+
+            .part1 .menu{
+                background-color: #e9ad00;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+				height: 80px;
+            }
+
+			.part1 .logo img{
+				width: 180px;
+			}
+
+            .part1 .lista ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                width: 300px;
+
+            }
+
+            .part1 .lista ul li a {
+                text-decoration: none;
+                color: white;
+				font-family: system-ui;
+				font-size: 22px;
+            }
+
+        	.part1 .menu .buscar img {
+             	width: 36px;
+    			height: 25px;  
+			}
+
+        	.part1 .menu .buscar {
+            	display: flex;
+            	align-items: center;
+        	}
+
+			.part1 .buscar input{
+				background-color: #ffc500;
+    			border: none;
+				width: 150px;
+       			height: 25px;
+			}
+
+			.part1 .info1 {
+		    	background-color: #ffc500;
+		    	display: flex;
+		    	justify-content: space-evenly;
+				height: 430px;
+			}
+
+			.part1 .imagen1 img{
+		    	width: 350px;
+			}
+
+			.part1 .info1 h1 {
+		    	color:white;
+    			font-size: 45px;
+    			font-family: system-ui;
+    			font-weight: 600;
+			}
+
+			.part1 .info1 p{
+		    	color:white;
+				font-family: sans-serif;
+				font-size: 19px;
+			}
+
+			.part1 .text1 {
+		    	margin-left: -20px;
+		    	margin-top: 39px;
+				width: 400px;
+			}
+
+			.part1 .botones{
+				display:flex;
+				justify-content: flex-start;
+			}
+
+			.part1 .botones a{
+				text-decoration: none;
+    			color: white;
+			}
+
+			.part1 .boton1-1 {
+				background-color: #00bfcb;
+    			width: 110px;
+    			height: 35px;
+    			border-radius: 5px;
+				text-align: center;
+			}
+
+			.part1 .boton2-2 {
+		    	border: 1px solid white;
+    			margin-left: 16px;
+				border-radius: 5px;
+				width: 110px;
+    			height: 35px;
+				text-align: center;
+			}
+
+			.part2 {
+				display: flex;
+            	justify-content: space-around;
+				height: 500px;
+			}		
+
+			.part2 .vid1{
+				width: 350px;
+				margin: 85px 105px 0 45px;
+			}
+
+			.part2 .info2 {
+				margin: 101px 0 0 100px;
+				width: 466px;
+			}
+
+			.part2 .info2 h1 {
+				font-size: 39px;
+    			font-family: system-ui;
+    			font-weight: 600;
+				color: #2c2e42;
+			}
+
+			.part2 .info2 p {
+				font-size: 25px;
+    			font-weight: 400;
+    			font-family: system-ui;
+				color: #2c2e42;
+			}
+
+			.part2 .info2 .boton2 {
+				width: 120px;
+    			height: 40px;
+    			background: #ffc500;
+				border-radius: 5px;
+    			text-align: center;
+			}
+		
+			.part2 .info2 a{
+				text-decoration: none;
+    			color: white;
+			}
+
+			.part3 {
+				background-color: #ffc500;
+			}
+
+			.part3 .secciones-3 {
+				display: flex;
+            	justify-content:space-around;
+            	text-align: center;
+            	padding-top: 40px;
+            	padding-bottom: 30px;
+			}
+
+			.part3 .secciones-3 img{
+				width: 300px;
+				height: 300px;
+			}
+
+			.part3 .texto-3 {
+				text-align: center;
+   				color: white;
+    			font-family: system-ui;
+			}
+
+			.part3 .texto-3 h3 {
+				font-size: 60px;
+    			padding-top: 50px;
+			}
+
+			.part3 .texto-3 p {
+				font-size: 30px;
+			}
+
+			.part3 .secciones-3 .txt-1 {
+				color: white;
+				font-family: system-ui;
+				font-size: 30px;
+    			font-weight: 600;
+    			margin-bottom: -10px;
+			}
+
+			.part3 .secciones-3 .txt-2 {
+				color: white;
+				font-family: system-ui;
+				font-size: 25px;
+    			font-weight: 400;
+			}
+
+			.part3 .secciones-3 .scc {
+				width: 300px;
+			}
+
+			.part4 {
+				display: flex;
+				justify-content: space-between;
+				height: 500px;
+			}
+
+			.part4 .vid2{
+				width: 350px;
+				margin: 90px 0 0 170px;
+			}
+
+			.part4 .info4 {
+				margin: 77px 229px 0 0;
+				width: 466px;
+				text-align: end;
+			}
+
+			.part4 .info4 h1 {
+				font-size: 39px;
+    			font-family: system-ui;
+    			font-weight: 600;
+				color: #2c2e42;
+			}
+
+			.part4 .info4 p {
+				font-size: 25px;
+    			font-weight: 400;
+    			font-family: system-ui;
+				color: #2c2e42;
+			}
+
+			.part4 .info4 .boton4 {
+				width: 120px;
+    			height: 40px;
+    			background: #ffc500;
+				border-radius: 5px;
+    			text-align: center;
+				margin-left: 311px;
+			}
+		
+			.part4 .info4 a{
+				text-decoration: none;
+    			color: white;
+			}
+
+			.part5 {
+				background-color: #ffc500;
+			}
+
+			.part5 .texto-5 {
+				text-align: center;
+   				color: white;
+    			font-family: system-ui;
+			}
+
+			.part5 .texto-5 h3 {
+				font-size: 60px;
+    			padding-top: 50px;
+			}
+
+			.part5 .texto-5 p {
+				font-size: 30px;
+			}
+
+			.part5 .secciones-5 {
+				display: flex;
+            	justify-content:space-around;
+            	text-align: center;
+            	padding-top: 40px;
+            	padding-bottom: 30px;
+				padding-bottom: 100;
+			}
+
+			.part5 .secciones-5 img{
+				width: 300px;
+				height: 300px;
+			}
+
+			.part5 .secciones-5 .precios {
+				display: flex;
+				justify-content: space-evenly;
+				color: white;
+				font-size: 35px;
+				font-weight: 500;
+				font-family: system-ui;
+			}
+
+			.part5 .secciones-5 .precios .p1{
+				text-decoration: line-through;
+			}
+
+			.part5 .secciones-5 a{
+				text-decoration: none;
+    			color: white;
+    			font-size: 27px;
+    			font-family: system-ui;
+			}
+
+			.part5 .secciones-5 .boton-5 {
+				background-color: 00bdc9;
+    			width: 190px;
+    			height: 55px;
+    			border-radius: 24px;
+    			margin-left: 55px;
+			}
+
+			.part6 .texto-6 {
+				text-align: center;
+            	color: #2c2e42;
+			}
+
+			.part6 .texto-6 h3 {
+				font-family: system-ui;
+            	font-size: 60px;
+			}
+
+			.part6 .texto-6 p {
+				font-family: system-ui;
+            	font-size: 30px;
+				margin-top: -35px;
+				padding-bottom: 40px;
+			}
+
+			.part6 .secciones-6 {
+				display: flex;
+            	justify-content:space-around;
+            	text-align: center;
+            	padding-top: 20px;
+            	padding-bottom: 110px;
+			}
+
+			.part6 .secciones-6 p {
+				font-size: 15px;
+			}
+
+			.part6 .secciones-6 img {
+				width: 300px;
+			}
+
+			.part6 .redes{
+            	display: flex;
+            	justify-content: center;
+        	}
+
+        	.part6 .redes img{
+				width: 35px;
+        	}
+
+			.part6 .secciones-6 h3{
+				font-size: 25px;
+				color: #2c2e42;
+			}
+
+			.part6 .secciones-6 p{
+				font-size: 21px;
+    			margin-top: -20px;
+				color: #2c2e42;
+			}
+
+			.part7 {
+				background-image: url("background-7.png");
+				display: flex;
+				justify-content: space-around;
+    			align-items: center;
+				height: 570;
+			}
+
+			.part8 .texto-8 {
+				text-align: center;
+            	color: #2c2e42;
+			}
+
+			.part8 .texto-8 h3 {
+				font-family: system-ui;
+   				font-size: 60px;
+    			font-weight: 700;
+    			color: #2c2e42;
+    			padding-top: 60px;
+			}
+
+			.part8 .texto-8 p {
+				font-family: system-ui;
+            	font-size: 30px;
+				padding-bottom: 40px;
+			}
+
+			.part8 .secciones-8 {
+				display: flex;
+				justify-content: center;
+				padding-bottom: 60px;
+			}
+
+			.part8 .secciones-8 img {
+				width: 375px;
+    			height: 375px;
+			}
+
+			.part8 .secciones-8 .s-8 {
+				width: 400px;
+			}
+
+			.part8 .secciones-8 .t-8 h3 {
+    			font-size: 30px;
+    			font-weight: 700;
+    			color: #2c2e42;
+				padding-top: 20px;
+			}
+
+			.part8 .secciones-8 .t-8 h5{
+				font-size: 20;
+    			color: #00bec8;
+				padding-top: 10px;
+			}
+
+			.part8 .secciones-8 .t-8 p{
+				font-size: 21px;
+				color: #2c2e42;
+				padding-top: 35px;
+				padding-bottom: 20px;
+			}
+
+			.part8 .secciones-8 .t-8 a {
+				text-decoration: none;
+    			font-size: 25px;
+				color: #00bec8;
+			}
+			
+
+			.part9 {
+				background-color: #333333
+				;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="part1">
+			<div class="menu">
+				<div class="logo">
+					<img src="Logo.png">
+				</div>
+				<div class="lista">
+						<ul>
+                        	<li><a href="#">Home</a></li>
+                       	 	<li><a href="#">About</a></li>
+                        	<li><a href="#">Service</a></li>
+                        	<li><a href="#">Contact</a></li>
+                    	</ul>
+				</div>
+				<div class="buscar">
+					<div><input type="text" placeholder="Search..."></div>
+                    		<div><img src="Lupa.png"></div>
+				</div>
+			</div>
+			<div class="info1">
+				<div class="text1">
+					<div><h1>First I wanted to be a veterinarian</h1></div>
+					<div><p>Lorem ipsum available but the majority have suffered alteration in some form, by injected humour randomised words.</p></div>
+					<div class="botones">
+						<div class="boton1-1"><a href="">Contact us</a></div>
+						<div class="boton2-1"><a href="">Our service</a></div>
+					</div>
+				</div>
+				<div class="imagen1">
+					<div><img src="perro.png"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="part2">
+			<div class="info2">
+				<div><h1>As a veterinarian and lover of animals</h1></div>
+				<div><p>Lorem ipsum available but the majority suffered alteration in some form, by humour randomised words.</p></div>
+				<div class="boton2"><a href="">Our service</a></div>
+			</div>
+			<div>
+				<img class="vid1" src="imgvid.png">
+			</div>
+		</div>
+
+		<div class="part3">
+			<div class="texto-3">
+				<div><h3>Title Here</h3></div>
+				<div><p>Lorem ipsum available but the majority have <br> suffered alteration in some form.</p></div>
+			</div>
+			<div class="secciones-3">
+				<div class="scc">
+					<img src="img1-3.png" alt="">
+					<div class="txt-1"><h3>veterinarian</h3></div>
+					<div class="txt-2"><p>Lorem ipsum available but the majority have suffered alteration in some.</p></div>
+				</div>
+				<div class="scc">
+					<img src="img2-3.png" alt="">
+					<div class="txt-1"><h3>Vaccination Care</h3></div>
+					<div class="txt-2"><p>Lorem ipsum available but the majority have suffered alteration in some.</p></div>
+				</div>
+				<div class="scc">
+					<img src="img3-3.png" alt="">
+					<div class="txt-1"><h3>Dental Care</h3></div>
+					<div class="txt-2"><p>Lorem ipsum available but the majority have suffered alteration in some.</p></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="part4">
+			<div>
+				<img class="vid2" src="imgvid2.png">
+			</div>
+			<div class="info4">
+				<div><h1>As a veterinarian and lover of animals</h1></div>
+				<div><p>Lorem ipsum available but the majority suffered alteration in some form, by humour randomised word.</p></div>
+				<div class="boton4"><a href="">Our service</a></div>
+			</div>
+		</div>
+
+		<div class="part5">
+			<div class="texto-5">
+				<h3>Title Here</h3>
+				<p>Lorem ipsum available but the majority have <br> suffered alteration in some form.</p>
+			</div>
+			<div class="secciones-5">
+				<div>
+					<div><img src="1-5.png" alt=""></div>
+					<div class="precios">
+						<p class="p1">$50</p> <p>$30</p>
+					</div>
+					<div class="boton-5"><a href="">Buy Now</a></div>
+				</div>
+				<div>
+					<div><img src="2-5.png" alt=""></div>
+					<div class="precios">
+						<p class="p1">$40</p> <p>$25</p>
+					</div>
+					<div class="boton-5"><a href="">Buy Now</a></div>
+				</div>
+				<div>
+					<div><img src="3-5.png" alt=""></div>
+					<div class="precios">
+						<p class="p1">$45</p> <p>$20</p>
+					</div>
+					<div class="boton-5"><a href="">Buy Now</a></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="part6">
+			<div class="texto-6">
+				<h3>The vetcare team</h3>
+				<p>Lorem ipsum available but the majority have <br> suffered alteration in some form.</p>
+			</div>
+			<div class="secciones-6">
+				<div>
+					<div><img src="img1.png" alt=""></div>
+					<div>
+						<h3>Jennifer Mullen</h3>
+						<p>VETERINARY</p>
+					</div>
+	
+					<div class="redes">
+						<div><a href="https://www.instagram.com/"><img src="instagram.png" alt=""></a></div>
+						<div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="facebook.png" alt=""></a></div>
+						<div><a href="https://twitter.com/?lang=es"><img src="twitter.png" alt=""></a></div>
+						<div><a href="https://www.whatsapp.com/?lang=es"><img src="whatsapp.png" alt=""></a></div>
+					</div>
+				</div>
+				<div >
+					<div><img src="img2.png" alt=""></div>
+					<div>
+						<h3>Sheeren Collins</h3>
+						<p>ADMINISTRATION</p>
+					</div>
+					<div class="redes">
+						<div><a href="https://www.instagram.com/"><img src="instagram.png" alt=""></a></div>
+						<div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="facebook.png" alt=""></a></div>
+						<div><a href="https://twitter.com/?lang=es"><img src="twitter.png" alt=""></a></div>
+						<div><a href="https://www.whatsapp.com/?lang=es"><img src="whatsapp.png" alt=""></a></div>
+					</div>
+				</div>
+				<div>
+					<div><img src="img3.png" alt=""></div>
+					<div>
+						<h3>Jennifer Mullen</h3>
+						<p>VETERINARY</p>
+					</div>
+					<div class="redes">
+						<div><a href="https://www.instagram.com/"><img src="instagram.png" alt=""></a></div>
+						<div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="facebook.png" alt=""></a></div>
+						<div><a href="https://twitter.com/?lang=es"><img src="twitter.png" alt=""></a></div>
+						<div><a href="https://www.whatsapp.com/?lang=es"><img src="whatsapp.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="part7">
+			<div><img src="1-7.png" alt=""></div>
+			<div><img src="2-7.png" alt=""></div>
+			<div><img src="3-7.png" alt=""></div>
+		</div>
+
+		<div class="part8">
+			<div class="texto-8">
+				<h3>Recent Posts</h3>
+				<p>Lorem ipsum available but the majority have <br> suffered alteration in some form.</p>
+			</div>
+			<div class="secciones-8">
+				<div class="s-8">
+					<div>
+						<img src="1-8.png" alt="">
+					</div>
+					<div class="t-8">
+						<h3>As a veterinarian and a lover of animals</h3>
+						<h5>FEBRUARY 09, 2020</h5>
+						<p>Lorem ipsum available but the majority have suffered alteration in some words which looks.</p>
+						<a href="">Read More+</a>
+					</div>
+				</div>
+				<div class="s-8">
+					<div>
+						<img src="2-8.png" alt="">
+					</div>
+					<div class="t-8">
+						<h3>As a veterinarian and a lover of animals</h3>
+						<h5>FEBRUARY 09, 2020</h5>
+						<p>Lorem ipsum available but the majority have suffered alteration in some words which looks.</p>
+						<a href="">Read More+</a>
+					</div>
+				</div>
+				<div class="s-8">
+					<div>
+						<img src="3-8.png" alt="">
+					</div>
+					<div class="t-8">
+						<h3>As a veterinarian and a lover of animals</h3>
+						<h5>FEBRUARY 09, 2020</h5>
+						<p>Lorem ipsum available but the majority have suffered alteration in some words which looks.</p>
+						<a href="">Read More+</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="part9">
+			<div>
+				<h3>About</h3>
+				<ul>
+					<li>History</li>
+					<li>Our Team</li>
+					<li>Brand Guidelines</li>
+					<li>Terms & Condition</li>
+					<li>Privacy Policy</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Service</h3>
+				<ul>
+					<li>How To Order</li>
+					<li>Our Product</li>
+					<li>Order Status</li>
+					<li>Promo</li>
+					<li>Payment Method</li>
+				</ul>
+			</div>
+			<div>
+				<div>
+					<h3>Title Here</h3>
+					<p>Lorem ipsum available, but the majorit</p>
+				</div>
+				<div>
+					<div><input type="text"></div>
+					<div><img src="enviar-9.png" alt=""></div>
+				</div>
+				<div>
+					<div><a href="https://www.instagram.com/"><img src="insta-9.png" alt=""></a></div>
+					<div><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="face-9.png" alt=""></a></div>
+					<div><a href="https://twitter.com/?lang=es"><img src="twit-9.png" alt=""></a></div>
+					<div><a href="https://www.whatsapp.com/?lang=es"><img src="whats-9.png" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
